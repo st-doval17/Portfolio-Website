@@ -1,0 +1,332 @@
+:root {
+  --primary-color: #357b70;
+  --secondary-color: #e0b354;
+  --dark-grey: #2b2b2b;
+  --background-color: #ffffff;
+  --link-color: #357b70;
+  --visited-link-color: #c50202;
+  --link-hover-color: rgb(38, 118, 165);
+  --link-active-color: #15ff00;
+  --button-background-color: #25546b;
+  --button-color: white;
+  --button-border-bottom-color: rgba(0, 0, 0, 0.3);
+  --button-secondary-background-color: #e0b354;
+  --button-secondary-color: #2b2b2b;
+  --grid-link-color: #bd0000;
+  --grid-background-color: #d6e2ec;
+  --color-change-0: #edc655;
+  --color-change-50: #fcffad;
+  --color-change-100: #f76414;
+  --font-weight: 700;
+  --transition-opacity-2: opacity 0.2s;
+  --display-grid: grid;
+  --display-flex: flex;
+  --text-align: center;
+  --font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+/*
+Colors used
+
+Text Color (Dark Gray): #2b2b2b;
+Primary Color (Teal): #357b70;
+Secondary Color (Orange): #e0b354;
+ */
+
+.logo-header {
+  width: 13%;
+}
+
+.page-header {
+  display: var(--display-flex);
+  width: 100%;
+  padding: 10px;
+  align-items: center;
+} 
+
+.page-header__item {
+  flex: 0 1 200px;
+}
+
+.page-header__item:last-child {
+  flex-grow: 1;
+  text-align: right;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: var(--font-family);
+    font-weight: 400;
+/* Sets the font size to 16px */
+  font-size: 16px;
+/* Sets the line-height to 1.6 */
+  line-height: 1.6;
+ 
+}
+
+* {
+  /* To combat combined border and padding resizing, this defaults width of an element */
+  box-sizing: border-box;
+}
+ 
+
+.navigation-list {
+  list-style-type: none;
+}
+
+.navigation-list li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.navigation-list__item--active {
+    text-decoration: none;
+  }
+
+.profile {
+    max-width: 700px;
+    margin: 0 auto;
+  }  
+
+.profile__portrait {
+    float: left;
+    width: 250px;
+    margin-right: 40px;
+    border-radius: 50%;
+  }  
+
+h1 {
+  font-size: 30px;
+  font-weight: var(--font-weight);
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: var(--font-weight);
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: var(--font-weight);
+
+}
+
+a {
+    color: var(--primary-color);
+  }
+  
+  a:visited {
+    /* visited link */
+    color: var(--visited-link-color);
+  }
+
+  a:hover, a:focus {
+    /* No underlining when hovering over a link */
+    text-decoration: line-through;
+    opacity: 0.5;
+    color: var(--link-hover-color);
+  }
+  
+  a:active {
+    /* selected link */
+    color: var(--link-active-color);
+    text-decoration: underline;
+  }
+
+
+  button,
+  .button {
+    /* overwrites browser defaults and resets the border */
+    border: none;
+    display: inline-block;
+    /* takes the font from the outer container */
+    font-family: var(--font-family);
+    /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+    background-color: var(--button-background-color);
+    color: var(--button-color);
+    text-decoration: none;
+    /*adds spacing to the button (this will be discussed more in-depth later) */
+    padding: 8px;
+    border-radius: 3px;
+    /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+    border-bottom: 2px solid var(--button-border-bottom-color);
+    transition: var(--transition-opacity-2);
+  }
+
+  button:hover, 
+  button:focus,
+  .button:hover,
+  .button:focus,
+  .button__secondary:hover,
+  .button__secondary:focus {
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.8;
+  }
+
+  .button__secondary {
+    background-color: var(--button-secondary-background-color);
+    color: var(--button-secondary-color);
+    border: none;
+    display: inline-block;
+    font-family: var(--font-family);
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 3px;
+    border-bottom: 2px solid var(--button-border-bottom-color);
+    transition: var(--transition-opacity-2);
+
+  }
+
+  .page-footer {
+    clear: both;
+    display: var(--display-flex);
+    flex-direction: column;
+    text-align: var(--text-align);
+  }
+
+  .grid {
+    display: var(--display-grid);
+  }
+
+  .grid__item {
+    background-color: var(--grid-background-color);
+  }
+
+  .grid-link{
+    color: var(--grid-link-color); 
+  }
+
+  .grid {
+    display: var(--display-grid);
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 300px 300px;
+  }
+
+  .grid {
+    display: var(--display-grid);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  .grid__item:last-child {
+    grid-column: 3 / 3;
+    grid-row: 1 / 3;
+  }
+
+  .work-title-text {
+    text-align: var(--text-align);
+  }
+
+  .bio-text{
+    text-align: var(--text-align);
+    padding: 20px;
+  }
+
+  .about-title {
+    text-align: var(--text-align);
+  }
+
+  .experience-table{
+    display: var(--display-flex);
+    justify-content: space-around;
+    text-align: var(--text-align);
+  }
+
+  .contact-form{
+    display: var(--display-flex);
+    justify-content: space-around;
+    text-align: var(--text-align);
+  }
+
+  .default-link{
+    display: var(--display-flex);
+    flex-direction: row;
+    justify-content: flex-end;
+    transition: opacity 0.2s;
+
+  }
+
+                /*start of responsive layout for specific screen sizes */
+
+@media all and (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media all and (min-width: 500px) and (max-width: 750px){
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media all and (max-width: 750px) {
+  .grid {
+    grid-gap: 10px;
+  }
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}
+                /* end of responsive layout for specific screen sizes */
+
+.about-image {
+  align-self: center;
+  align-items: baseline;
+  width: 100%;
+  max-width: 800px;
+}    
+
+.hobbies-list{
+  list-style-type: none;
+  text-align: var(--text-align);
+}
+
+                  /* Animation starts here */
+
+@keyframes color-change {
+  0% {
+    fill: var(--color-change-0);
+  }
+  50% {
+    fill: var(--color-change-50);
+  }
+  100% {
+    fill: var(--color-change-100);
+  }
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+  to {
+    transform: translate(180px, 50px);
+  }
+}
+
+.cloud-2 {
+  animation: 30s cloud-move infinite alternate linear;
+}   
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(10px, 0px);
+  }
+  to {
+    transform: translate(-25px, -10px);
+  }
+}
+
+.cloud-1 {
+  animation: 30s cloud-move-reverse infinite alternate linear;
+}
