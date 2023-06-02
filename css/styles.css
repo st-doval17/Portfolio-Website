@@ -256,6 +256,7 @@ a {
   background-color: var(--button-background-color);
   color: var(--button-color);
   text-decoration: none;
+  margin-left: 35px;
   padding-left: 12px;
   padding-right: 12px;
   padding-top: 8px;
@@ -318,6 +319,7 @@ a {
     background-color: var(--button-background-color);
     color: var(--button-color);
     text-decoration: none;
+    margin-left: 60px;
     /*adds spacing to the button (this will be discussed more in-depth later) */
     padding-left: 12px;
     padding-right: 12px;
