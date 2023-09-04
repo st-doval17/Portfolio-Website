@@ -1,94 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
+  <head>
+    <meta charset="utf-8" />
 
-		<!-- Viewport tag goes here -->
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Viewport tag goes here -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<title>Genesis Sandoval - Portfolio</title>
+    <title>Genesis Sandoval - Portfolio</title>
 
-		<link rel="shortcut icon" type="image/png" href="img/my_logoicon.png" />
+    <link rel="shortcut icon" type="image/png" href="img/my_logoicon.png" />
 
-		<!-- Font link goes here -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap"
-			rel="stylesheet" />
+    <!-- Font link goes here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap"
+      rel="stylesheet" />
 
-		<link rel="stylesheet" type="text/css" href="css/normalize.min.css" />
-		<link rel="stylesheet" type="text/css" href="css/style.production.css" />
-		<link rel="stylesheet" type="text/css" href="css/styles.css" />
-	</head>
+    <link rel="stylesheet" type="text/css" href="css/normalize.min.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.production.css" /> -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  </head>
 
-	<body>
-		<!-- Header including the logo and the main navigation -->
-		<header class="page-header">
-			<!-- Add Logo here -->
-			<img
-				class="logo-header page-header__item"
-				src="img/genesis_logo.svg"
-				alt="logo" />
+  <body>
+    <!-- Header including the logo and the main navigation -->
+    <header class="page-header">
+      <nav class="main-navigation page-header__item">
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a
+              href="index.html"
+              role="menuitem"
+              class="navigation-list__item navigation-list__item--active"
+              >Home</a
+            >
+          </li>
 
-			<nav class="main-navigation page-header__item">
-				<ul role="menubar" class="navigation-list">
-					<li role="presentation">
-						<a
-							href="index.html"
-							role="menuitem"
-							class="navigation-list__item navigation-list__item--active"
-							>Home</a
-						>
-					</li>
+          <li role="presentation">
+            <a href="work.html" role="menuitem" class="navigation-list__item"
+              >Work</a
+            >
+          </li>
 
-					<li role="presentation">
-						<a href="about.html" role="menuitem" class="navigation-list__item"
-							>About Me</a
-						>
-					</li>
+          <li role="presentation">
+            <a href="contact.html" role="menuitem" class="navigation-list__item"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-					<li role="presentation">
-						<a href="work.html" role="menuitem" class="navigation-list__item"
-							>Work</a
-						>
-					</li>
+    <div class="logo">
+      <img
+        class="logo-header page-header__item"
+        src="img/genesis_logo.svg"
+        alt="logo" />
+      <h1>GENESIS SANDOVAL</h1>
+    </div>
 
-					<li role="presentation">
-						<a href="contact.html" role="menuitem" class="navigation-list__item"
-							>Contact</a
-						>
-					</li>
-				</ul>
-			</nav>
-		</header>
+    <section class="intro">
+      <section class="intro_content">
+        <h2>Welcome to my Portfolio</h2>
+        <p>
+          I'm Genesis Sandoval, an aspiring web developer with a passion for
+          problem-solving and creating exceptional digital experiences.
+          <br /><br />
+          My journey in web development began with self-taught HTML and CSS,
+          which I've since complemented with comprehensive training in
+          CareerFoundry's Full-Stack Web Development Program. Today, I'm
+          proficient in technologies like JavaScript, Node.js, MongoDB, React,
+          and more.
+          <br /><br />
+          My commitment to adaptability and persistence drives me to seek
+          opportunities where I can contribute my technical expertise to dynamic
+          web development teams. Let's collaborate to craft innovative and
+          engaging digital solutions.
+        </p>
 
-		<div class="profile">
-			<img
-				src="img/genesis_portrait.jpg"
-				class="profile__portrait"
-				alt="Genesis Sandoval Logo" />
-			<div class="home-text">
-				<h1>Welcome to my Portfolio!</h1>
-				<p>
-					My name is G. S. I am a Web Developer from Texas living in Hamburg,
-					Germany.
-				</p>
-				<a href="https://github.com/st-doval17">Check out my code</a>
-			</div>
-		</div>
+        <div class="intro__links">
+          <a class="github" href="https://github.com/st-doval17"
+            ><img
+              class="github_logo"
+              src="img/github.svg"
+              alt="github logo" />Find me on GitHub
+          </a>
+          <a
+            class="cv"
+            href="https://drive.google.com/file/d/1Y9Wak6sZF_vvyJd8xnrGZZSCTmdtY6Hr/view?usp=sharing"
+            download
+            ><img
+              class="cv_icon"
+              src="img/download_icon.svg"
+              alt="download icon" />Download my CV
+          </a>
+        </div>
+      </section>
 
-		<footer class="page-footer">
-			<p>Find me on</p>
-			<div class="social-media">
-				<!-- Github logo & link -->
-				<a href="https://github.com/st-doval17" target="_blank">
-					<img src="img/github.svg" alt="github" />
-				</a>
-			</div>
-		</footer>
+      <img
+        class="portrait"
+        src="img/genesis_portrait.jpg"
+        alt="Picture of Genesis Sandoval " />
+    </section>
 
-		<!-- an accessibility visualization toolkit -->
-		<script src="js/tota11y.min.js"></script>
-	</body>
+    <section class="skill_container">
+      <div class="skill">Test</div>
+      <div class="skill">Test</div>
+      <div class="skill">Test</div>
+      <div class="skill">Test</div>
+      <div class="skill">Test</div>
+      <div class="skill">Test</div>
+      <div class="skill">Test</div>
+      <div class="skill">Test</div>
+      <div class="skill">Test</div>
+      <div class="skill">Test</div>
+    </section>
+
+    <div class="index_img">
+      <img
+        class="index_img-img"
+        src="img/index_img.jpg"
+        alt="Picture of a person scrolling on a laptop" />
+    </div>
+
+    <!-- an accessibility visualization toolkit -->
+    <script src="js/tota11y.min.js"></script>
+  </body>
 </html>
