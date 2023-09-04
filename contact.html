@@ -1,116 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
+  <head>
+    <meta charset="utf-8" />
 
-		<!-- Viewport tag goes here -->
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Viewport tag goes here -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<title>Genesis Sandoval - Portfolio</title>
+    <title>Genesis Sandoval - Portfolio</title>
 
-		<link rel="shortcut icon" type="image/png" href="img/my_logoicon.png" />
+    <link rel="shortcut icon" type="image/png" href="img/my_logoicon.png" />
 
-		<!-- Font link goes here -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap"
-			rel="stylesheet" />
+    <!-- Font link goes here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap"
+      rel="stylesheet" />
 
-		<link rel="stylesheet" type="text/css" href="css/normalize.min.css" />
-		<link rel="stylesheet" type="text/css" href="css/style.production.css" />
-		<link rel="stylesheet" type="text/css" href="css/styles.css" />
-	</head>
+    <link rel="stylesheet" type="text/css" href="css/normalize.min.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.production.css" /> -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  </head>
 
-	<body>
-		<header class="page-header">
-			<img
-				class="logo-header page-header__item"
-				src="img/genesis_logo.svg"
-				alt="logo" />
+  <body>
+    <header class="page-header">
+      <nav class="main-navigation page-header__item">
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a
+              href="index.html"
+              role="menuitem"
+              class="navigation-list__item navigation-list__item"
+              >Home</a
+            >
+          </li>
 
-			<nav class="main-navigation page-header__item">
-				<ul role="menubar" class="navigation-list">
-					<li role="presentation">
-						<a href="index.html" role="menuitem" class="navigation-list__item"
-							>Home</a
-						>
-					</li>
-					<li role="presentation">
-						<a href="about.html" role="menuitem" class="navigation-list__item"
-							>About Me</a
-						>
-					</li>
-					<li role="presentation">
-						<a href="work.html" role="menuitem" class="navigation-list__item"
-							>Work</a
-						>
-					</li>
-					<li role="presentation">
-						<a
-							href="contact.html"
-							role="menuitem"
-							class="navigation-list__item navigation-list__item--active"
-							>Contact</a
-						>
-					</li>
-				</ul>
-			</nav>
-		</header>
+          <li role="presentation">
+            <a href="work.html" role="menuitem" class="navigation-list__item"
+              >Work</a
+            >
+          </li>
 
-		<div class="bio-text">
-			<h1>Get in touch</h1>
+          <li role="presentation">
+            <a
+              href="contact.html"
+              role="menuitem"
+              class="navigation-list__item--active"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-			<div>
-				<!-- Address -->
-				G. S.<br />
-				Hamburg, Germany<br />
-				<br />
+    <h1 class="work-title-text">Get in touch</h1>
 
-				<!-- Email address -->
-				E-mail: <a href="mailto:st.doval17@gmail.com">st.doval17@gmail.com</a>
-			</div>
-		</div>
+    <section class="contact">
+      <div class="contact_img">
+        <img
+          class="contact_img-img"
+          src="img/contact_img.jpg"
+          alt="Picture of mailboxes and one of them is over-filled" />
+      </div>
 
-		<!-- <div class="bio-text">
-                <a href="mailto:st.doval17@gmail.com">Contact me</a>
-          </div>  -->
+      <form
+        action="mailto:st.doval17@gmail.com"
+        method="post"
+        id="contact-form">
+        <label class="standard-label" for="fname"></label>
+        <input
+          type="text"
+          id="fname"
+          name="firstname"
+          placeholder="First Name" />
 
-		<div class="contact-form">
-			<form
-				action="mailto:st.doval17@gmail.com"
-				method="post"
-				id="contact-form">
-				<label class="standard-label" for="contact-email">Email: </label>
-				<input type="email" id="contact-email" required />
+        <label class="standard-label" for="lname"></label>
+        <input type="text" id="lname" name="lastname" placeholder="Last Name" />
 
-				<label class="standard-label" for="contact-tel">Telephone: </label>
-				<input
-					type="tel"
-					id="contact-tel"
-					pattern="\d{3}[\-]\d{3}[\-]\d{4}"
-					required />
+        <label class="standard-label" for="email"></label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email Address" />
 
-				<label class="standard-label" for="contact-message">Message: </label>
-				<textarea required maxlength="240" id="contact-message"></textarea>
+        <label class="standard-label" for="contact-message"></label>
+        <textarea
+          required
+          maxlength="240"
+          id="contact-message"
+          placeholder="Your Message"></textarea>
 
-				<button class="send-button" type="submit" value="Send message">
-					Send Message
-				</button>
-			</form>
-		</div>
+        <button class="send_button" type="submit" value="Your message">
+          Send
+        </button>
+      </form>
+    </section>
 
-		<footer class="page-footer">
-			<p>Find me on</p>
-			<div class="social-media">
-				<!-- Github logo & link -->
-				<a href="https://github.com/st-doval17" target="_blank">
-					<img src="img/github.svg" alt="github" />
-				</a>
-			</div>
-		</footer>
+    <footer class="page-footer">
+      <p>Find me on</p>
+      <div class="social-media">
+        <!-- Github logo & link -->
+        <a href="https://github.com/st-doval17" target="_blank">
+          <img src="img/github.svg" alt="github" />
+        </a>
+      </div>
+    </footer>
 
-		<!-- an accessibility visualization toolkit -->
-		<script src="js/tota11y.min.js"></script>
-	</body>
+    <!-- an accessibility visualization toolkit -->
+    <script src="js/tota11y.min.js"></script>
+  </body>
 </html>
