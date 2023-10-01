@@ -1,7 +1,7 @@
 :root {
   --main-white: #f5f5f5;
   --main-black: #2e2d2c;
-  --dark-blue: #5a7b99;
+  --dark-blue: #4f7494;
   --light-blue: #9ab2c6;
   --light-grey: #eaeaea;
   --font-family: 'Montserrat', sans-serif;
@@ -28,6 +28,11 @@ body {
   height: 88px;
   align-items: center;
   background-color: var(--main-black);
+}
+
+.nav_logo {
+  width: 65px;
+  margin-left: var(--main-margin);
 }
 
 .page-header__item:last-child {
@@ -68,13 +73,11 @@ a {
 
 a:hover,
 a:focus {
-  /* No underlining when hovering over a link */
   text-decoration: none;
   color: var(--light-blue);
 }
 
 a:active {
-  /* selected link */
   text-decoration: none;
 }
 
@@ -120,14 +123,14 @@ h1 {
   margin-left: var(--main-margin);
   margin-right: var(--main-margin);
   margin-top: 112px;
-  flex-wrap: wrap;
+  gap: 120px;
 }
 
 .intro_content {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  width: 40%;
+  justify-content: space-between;
 }
 
 h2 {
@@ -141,8 +144,9 @@ h2 {
 p {
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 18px;
+  line-height: auto;
+  cursor: default;
 }
 
 .intro__links {
@@ -151,7 +155,7 @@ p {
   gap: 12px;
 }
 
-.github {
+.link_container {
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -173,10 +177,19 @@ p {
   gap: 10px;
 }
 
+.image_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .portrait {
+  display: flex;
   border-radius: var(--main-radius);
   object-fit: cover;
-  height: 427px;
+  vertical-align: bottom;
+  height: 100%;
+  width: 100%;
 }
 
 .skill_container {
@@ -188,6 +201,10 @@ p {
   justify-content: space-evenly;
   row-gap: 20px;
   column-gap: 40px;
+}
+
+.skill_container:hover {
+  cursor: default;
 }
 
 .skill {
@@ -244,12 +261,15 @@ footer {
 
 .card {
   width: 368px;
-  /* height: 168px; */
   display: flex;
   flex-direction: column;
   box-shadow: var(--main-shadow);
   background: var(--light-grey);
   border-radius: var(--main-radius);
+}
+
+.card:hover {
+  scale: 1.01;
 }
 
 .card_image {
@@ -291,17 +311,6 @@ footer {
   padding: 8px 16px;
   font-size: 16px;
   font-weight: 600;
-}
-
-.app_site {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 24px;
-  color: var(--main-black);
-  display: flex;
-  align-items: center;
-  gap: 10px;
 }
 
 /* START OF CASE STUDY PAGE */
@@ -354,6 +363,12 @@ footer {
   gap: 180px;
 }
 
+.contact_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .contact_links {
   display: flex;
   justify-content: space-between;
@@ -365,23 +380,27 @@ footer {
 
 .contact_links-link {
   display: flex;
-  gap: 8px;
+  gap: 10px;
   align-items: flex-start;
+  font-weight: 500;
+  color: var(--dark-blue);
 }
 
 .contact_img {
-  width: 100%;
-  height: 360px;
-  object-fit: cover;
   border-radius: var(--main-radius);
+  width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+  height: 100%;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  width: 40%;
   border-radius: var(--main-radius);
   gap: 16px;
+  min-width: 40%;
+  justify-content: space-between;
 }
 
 label {
@@ -432,13 +451,11 @@ textarea {
 }
 
 .send_button {
-  display: flex;
   width: 100%;
   height: 56px;
   padding: 16px 32px;
   justify-content: center;
   align-items: center;
-  gap: 10px;
   border-radius: var(--main-radius);
   background-color: var(--dark-blue);
   color: var(--main-white);
@@ -447,6 +464,100 @@ textarea {
 .kontaktform {
   color: var(--dark-blue);
   font-weight: 600;
+}
+
+/* START OF SINGLE PROJECT SITES */
+
+.project_content {
+  display: flex;
+  flex-direction: column;
+  margin-right: var(--main-margin);
+  margin-left: var(--main-margin);
+  margin-top: 96px;
+  margin-bottom: 200px;
+  gap: 48px;
+}
+
+.project_title {
+  color: var(--main-black);
+  font-size: 48px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.project_tools {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 24px;
+  align-items: center;
+}
+
+.project_tools h2 {
+  margin-right: 40px;
+}
+
+.project-links {
+  display: flex;
+  gap: 32px;
+  background-color: var(--light-grey);
+  padding: 40px 0px 40px 92px;
+  margin-left: -92px;
+  margin-right: -92px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.project-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project-text h3 {
+  color: var(--main-black);
+  font-size: 24px;
+}
+.project-text h4 {
+  color: var(--dark-blue);
+  font-size: 18px;
+}
+
+.project-text p {
+  margin-bottom: 20px;
+}
+
+.project-text ul {
+  margin-bottom: 20px;
+}
+
+li {
+  font-size: 18px;
+  color: var(--main-black);
+  margin-left: 20px;
+  padding-left: 5px;
+}
+
+#gallery {
+  line-height: 0;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 20px;
+  -moz-column-count: 3;
+  -moz-column-gap: 5px;
+  column-count: 3;
+  column-gap: 20px;
+}
+
+#gallery img {
+  width: 100% !important;
+  height: auto !important;
+  margin-bottom: 20px;
+  filter: grayscale(100%);
+  transition: filter 1s;
+}
+
+#gallery img:hover {
+  filter: none;
 }
 
 /* START OF PRIVACY PAGE */
@@ -461,6 +572,7 @@ textarea {
   margin-left: var(--main-margin);
   margin-right: var(--main-margin);
   margin-top: 80px;
+  margin-bottom: 200px;
 }
 
 /*start of responsive layout for specific screen sizes */
@@ -470,7 +582,7 @@ textarea {
   .main-navigation {
     display: flex;
     justify-content: right;
-    margin-right: 80px;
+    margin-right: 60px;
   }
   .hamburger {
     display: block;
@@ -510,67 +622,108 @@ textarea {
     left: 0;
   }
   .logo {
-    margin-left: 80px;
+    margin-left: 60px;
   }
   .navigation-list {
-    margin-right: 80px;
-  }
-  .intro {
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-right: 60px;
   }
   .skill_container {
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 60px;
+    margin-right: 60px;
   }
   .index_img {
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 60px;
+    margin-right: 60px;
   }
   footer {
-    padding-right: 80px;
+    padding-right: 60px;
   }
   .work-title-text {
-    margin-left: 80px;
+    margin-left: 60px;
   }
   .card_container {
-    margin-right: 80px;
-    margin-left: 80px;
+    margin-right: 60px;
+    margin-left: 60px;
   }
   .caseStudy {
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 60px;
+    margin-right: 60px;
   }
   .contact {
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 60px;
+    margin-right: 60px;
   }
   .privacy_content {
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 60px;
+    margin-right: 60px;
   }
   .impressum_content {
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 60px;
+    margin-right: 60px;
   }
   .contact {
     flex-wrap: wrap;
+    gap: 60px;
   }
+
   form {
     width: 100%;
+  }
+  .intro {
+    margin-left: 60px;
+    margin-right: 60px;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .intro_content {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .portrait {
+    width: 100%;
+  }
+  #gallery {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
+  }
+  .project-links {
+    padding: 40px 0px 40px 60px;
+    margin-left: -60px;
+    margin-right: -60px;
+  }
+  .project_content {
+    margin-right: 60px;
+    margin-left: 60px;
+  }
+  .logo {
+    flex-wrap: wrap;
+    row-gap: 5px;
+  }
+  .logo h1 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .card {
+    width: 100%;
+  }
+  .card_image {
+    width: 100%;
+  }
+  .card_container {
+    justify-content: center;
+  }
+  .nav_logo {
+    margin-left: 60px;
   }
 }
 
 /* Extra large devices (large laptops and desktops, 1400px and up) */
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1500px) {
   .logo {
     margin-left: 120px;
   }
   .navigation-list {
-    margin-right: 120px;
-  }
-  .intro {
-    margin-left: 120px;
     margin-right: 120px;
   }
   .skill_container {
@@ -606,5 +759,31 @@ textarea {
   .impressum_content {
     margin-left: 120px;
     margin-right: 120px;
+  }
+  .project-links {
+    padding: 40px 0px 40px 120px;
+    margin-left: -120px;
+    margin-right: -120px;
+  }
+  .project_content {
+    margin-right: 120px;
+    margin-left: 120px;
+  }
+  textarea {
+    height: 260px;
+  }
+  .intro {
+    margin-left: 120px;
+    margin-right: 120px;
+    min-height: 580px;
+    column-gap: 260px;
+    max-height: 600px;
+  }
+  .intro_content {
+    justify-content: center;
+    gap: 70px;
+  }
+  .nav_logo {
+    margin-left: 120px;
   }
 }

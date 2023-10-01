@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <!-- Viewport tag goes here -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Genesis Sandoval - Portfolio</title>
+
+    <link rel="shortcut icon" type="image/png" href="img/my_logoicon.png" />
+
+    <!-- Font link goes here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap"
+      rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../css/normalize.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+  </head>
+
+  <body>
+    <!-- Header including the logo and the main navigation -->
+    <header class="page-header">
+      <a href="../index.html">
+        <img
+          class="nav_logo"
+          src="../img/genesis_logo_white.svg"
+          alt="genesis sandoval logo" />
+      </a>
+      <nav class="main-navigation page-header__item">
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a
+              href="../index.html"
+              role="menuitem"
+              class="navigation-list__item navigation-list__item"
+              >Home</a
+            >
+          </li>
+
+          <li role="presentation">
+            <a href="../work.html" role="menuitem" class="navigation-list__item"
+              >Work</a
+            >
+          </li>
+
+          <li role="presentation">
+            <a
+              href="../contact.html"
+              role="menuitem"
+              class="navigation-list__item"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span><span class="bar"></span
+          ><span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+    <section class="project_content">
+      <h1 class="project_title">myFlix React App</h1>
+      <div class="project_tools">
+        <h2>Tools used</h2>
+        <div class="tool">React</div>
+        <div class="tool">JavaScript</div>
+        <div class="tool">MongoDB</div>
+      </div>
+      <div class="project-text">
+        <h3>Overview</h3>
+        <p>
+          The myFlix React app serves as the client-side component for the
+          myFlix web application, which was previously developed on the
+          server-side using the MERN stack. This project showcases the
+          capabilities of full-stack JavaScript development, delivering a
+          complete web app experience.
+        </p>
+        <h3>User Stories</h3>
+        <ul>
+          <li>
+            As a user, I can access detailed information about movies I've
+            watched or am interested in.
+          </li>
+          <li>I can create a profile to save data about my favorite movies.</li>
+        </ul>
+        <h3>Features & Requirements</h3>
+        <h4>Main View</h4>
+        <ul>
+          <li>Displays all movies with images, titles, and descriptions.</li>
+          <li>Provides a search feature to filter the movie list.</li>
+          <li>Allows selection of a movie for more details.</li>
+          <li>Offers a logout option.</li>
+          <li>Navigates to the Profile view.</li>
+        </ul>
+        <h4>Single Movie View</h4>
+        <ul>
+          <li>
+            Provides detailed data (description, genre, director, image) about a
+            single movie.
+          </li>
+          <li>Allows users to add a movie to their favorites.</li>
+        </ul>
+        <h4>Login View</h4>
+        <ul>
+          <li>Enables user login with a username and password.</li>
+        </ul>
+        <h4>Signup View</h4>
+        <ul>
+          <li>
+            Allows new users to register with username, password, email, and
+            date of birth.
+          </li>
+        </ul>
+        <h4>Profile View</h4>
+        <ul>
+          <li>Displays user registration details.</li>
+          <li>
+            Supports updates to user information (username, password, email,
+            date of birth).
+          </li>
+          <li>
+            Shows favorite movies and allows removal of movies from the
+            favorites list.
+          </li>
+          <li>Offers existing users the option to deregister.</li>
+        </ul>
+        <h4>Technical Requirements</h4>
+        <ul>
+          <li>Utilizes single-page application (SPA) architecture.</li>
+          <li>
+            Implements state routing for view navigation and shareable URLs.
+          </li>
+          <li>Provides a movie search feature.</li>
+          <li>Uses Parcel as the build tool.</li>
+          <li>Developed using React and ES2015+ standards.</li>
+          <li>Incorporates Bootstrap for UI styling and responsiveness.</li>
+          <li>Utilizes function components.</li>
+          <li>Hosted online for accessibility.</li>
+        </ul>
+        <h3>Role & Accomplishments</h3>
+        <p>
+          I served as the lead developer for this project, successfully meeting
+          all the specified requirements and implementing my design vision.
+          Throughout this experience, I gained valuable insights into the
+          significance of well-defined endpoints and the intricacies of back-end
+          development.
+        </p>
+        <h3>Potential Improvements</h3>
+        <p>
+          In hindsight, I would pay closer attention to endpoint creation during
+          the API phase. This approach would ensure that when I call for
+          specific endpoints, they align seamlessly with the intended
+          functionality, reducing the need for subsequent modifications.
+        </p>
+      </div>
+      <div class="project-links">
+        <a
+          class="link_container"
+          href="https://github.com/st-doval17/myFlix-client"
+          ><img src="../img/github.svg" alt="github logo" />GitHub Link
+        </a>
+        <br />
+        <a class="link_container" href="https://myflix-gs.netlify.app/"
+          ><img src="../img/Website_icon.svg" alt="website icon" />Hosted App
+        </a>
+        <br />
+        <a class="link_container" href="../caseStudy.html"
+          ><img src="../img/Document_icon.svg" alt="website icon" />Case Study
+        </a>
+      </div>
+      <div id="gallery">
+        <img src="../img/myFlix_1.png" />
+        <img src="../img/myFlix_2.png" />
+        <img src="../img/myFlix_3.png" />
+        <img src="../img/myFlix_4.png" />
+        <img src="../img/myFlix_5.png" />
+        <img src="../img/myFlix_6.png" />
+      </div>
+    </section>
+
+    <!-- an accessibility visualization toolkit -->
+    <script src="../js/tota11y.min.js"></script>
+    <script src="../js/navigation.js"></script>
+  </body>
+
+  <footer>
+    <h3 class="footer-link">
+      <a href="../privacy.html">Impressum & Privacy Policy</a>
+    </h3>
+  </footer>
+</html>
