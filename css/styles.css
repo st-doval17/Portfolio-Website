@@ -313,44 +313,6 @@ footer {
   font-weight: 600;
 }
 
-/* START OF CASE STUDY PAGE */
-
-.caseStudy {
-  margin-left: var(--main-margin);
-  margin-right: var(--main-margin);
-  margin-top: 80px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 40px;
-  margin-bottom: 200px;
-}
-
-.tools_container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 10px;
-}
-
-.tool {
-  background-color: #5a7b99;
-  padding: 8px 16px 8px 16px;
-  border-radius: var(--main-radius);
-  color: var(--main-white);
-}
-
-.caseStudy_container {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  width: 40%;
-}
-
-.case_img {
-  object-fit: cover;
-}
-
 /* START OF CONTACT PAGE */
 
 .contact {
@@ -495,6 +457,13 @@ textarea {
 
 .project_tools h2 {
   margin-right: 40px;
+}
+
+.tool {
+  background-color: #5a7b99;
+  padding: 8px 16px 8px 16px;
+  border-radius: var(--main-radius);
+  color: var(--main-white);
 }
 
 .project-links {
