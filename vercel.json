@@ -1,7 +1,7 @@
 {
   "redirects": [
     {
-      "source": "/test-redirect",
+      "source": "/",
       "destination": "/offline.html",
       "permanent": false
     }
